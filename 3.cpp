@@ -7,7 +7,7 @@ class CPoint {
         CPoint(int xv, int yv) : x(xv), y(yv) {};
         CPoint( CPoint& A) : x(A.x), y(A.y) {};
 
-        void Print()  {
+        void print()  {
             cout << "(" << x << ", " << y << ")" << endl;
         }
 
@@ -24,7 +24,7 @@ int main() {
 
     CPoint point1;
     cout << "直接";
-    point1.Print();
+    point1.print();
 
     int a, b;
     cout << "请输入两个整数：";
@@ -32,10 +32,10 @@ int main() {
 
     CPoint point2(a, b);
     cout << "构造";
-    point2.Print();  
+    point2.print();  
 
     CPoint point3(point2);
     cout << "拷贝";
-    point3.Print();  
+    point3.print();  
     return 0;
 }
